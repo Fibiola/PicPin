@@ -1,4 +1,4 @@
-## README
+## PinPic
 
 Ruby on Rails application, based on Pintrest style app tutorial.
 
