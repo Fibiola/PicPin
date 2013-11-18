@@ -5,16 +5,21 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<br>
-<%= render 'layouts/header' %>
-<%= yield %>
 
-<p>
-<a href="http://fibiola.com/fibiola"> Find me on Github </a>
-</p>
+<div class="navbar nav">
+<%= render 'layouts/header' %>
 </div>
 
+<div class='container'>
+<%= yield %>
+
+<div class="footer">
+<a href="http://fibiola.com/fibiola"> Find me on Github </a>
+</footer>
+</div>
+</div>
 </body>
 </html>
