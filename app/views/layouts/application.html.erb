@@ -16,8 +16,9 @@
 <div class='container'>
 	 <!--# Ensure you have flash messages in app/views/layouts/application.html.erb.-->
 
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+       <% flash.each do |name, msg| %>
+       	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+       <% end %>
 <%= yield %>
 
 <div class="footer">
