@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.1'
 gem 'devise'
+gem  'simple_form'
 
 # Use sqlite3 as the database for Active Record
 group :development do
